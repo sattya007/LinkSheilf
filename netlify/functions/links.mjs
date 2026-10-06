@@ -15,6 +15,7 @@ const isPrivateHost = (host) =>
   /^(127\.|10\.|192\.168\.|169\.254\.|172\.(1[6-9]|2\d|3[01])\.)/.test(host) ||
   host === "[::1]";
 
+  // netlify functions
 const decode = (s) =>
   s
     .replace(/&amp;/g, "&")
